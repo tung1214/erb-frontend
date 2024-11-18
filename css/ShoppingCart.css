@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shoppingcart-header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.shoppingcart-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.cart-nav-links li {
+    margin-left: 20px;
+}
+
+.cart-nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.cart-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.carBody-cart {
+    display: flex;
+}
+
+.cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart-header input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-name {
+    margin-right: 20px;
+}
+
+.cart-item-price {
+    margin-right: 20px;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cart-item-quantity input {
+    margin: 0 5px;
+    width: 50%;
+}
+
+.cart-item-remove {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+
+.cart-totals {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.cart-totals span {
+    margin-left: 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

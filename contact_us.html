@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Itim&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" size="16x16" href="/images/logo-hands.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Contact Us</title>
+</head>
+<body>
+    <!-- nav bar-->
+  <!-- nav bar Logo-->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="./images/logo.png" class="logo-link" alt="logo" >
+      </a>
+    </div>
+   <!-- desktop-->
+    <div class="nav-links">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="about.html" class="nav-link"><span>about</span><i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a href="about.html">about us</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="enroll.html">enroll guide</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="event.html">our Event</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="contact_us.html">contact us</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="courses.html" class="nav-link"><span>courses</span><i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a href="courses.html">our course</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="index.html" readonly>coming soon</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="photo_album.html" class="nav-link"><span>photo album</span><i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a href="photo_album.html">photo</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="achieved.html">competition</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="shoppingcart.html" class="nav-icon">
+          <i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li><a href="login_form.html" class="nav-icon">
+          <i class="fa-solid fa-user"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile-nav-hamburger -->
+    <div class="nav-mobile">
+      <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- <div class="mobile-nav-items"></div> -->
+      <ul class="mobile-nav-list" id="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">about us</a></li>
+        <li><a href="enroll.html" class="mobile-nav-link">enroll guide</a></li>
+        <li><a href="event.html" class="mobile-nav-link">our Event</a></li>
+        <li><a href="contact_us.html" class="mobile-nav-link">contact us</a></li>
+        <li><a href="courses.html" class="mobile-nav-link">our course</a></li>
+        <li><a href="photo_album.html" class="mobile-nav-link">photo</a></li>
+        <li><a href="achieved.html" class="mobile-nav-link">competition</a></li>
+        <li><a href="shoppingcart.html" class="mobile-nav-icon">
+          <i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li><a href="login_form.html" class="mobile-nav-icon">
+          <i class="fa-solid fa-user"></i></a>
+        </li>
+      </ul>
+    </div>
+   </nav>
+  <!-- contact us form content -->
+<section class="contact-us-container">
+  <div class="entry_container">
+    <div class="entrybox1">
+        <h1 class="contact_us"></h1>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="fullName">
+                <i class="fa fa-solid fa-user" style="margin: 2px;"></i> Full Name: </label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">
+                <i class="fa fa-solid fa-envelope" style="margin: 2px;"></i> Email Address: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">
+                <i class=" fa fa-solid fa-phone" style="margin: 2px;"></i> Contact No: </label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="msg">
+                <i class=" fa fa-solid fa-comment" style="margin: 2px;"></i> Write Message: </label><textarea id="msg" name="msg" rows="5" required></textarea>
+
+            <button class="contactus-button" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div class="map-div">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.125736248076!2d114.22507189999999!3d22.311083999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401af6936cf01%3A0x7d55ee4f3a1bfb6a!2sWong%20Tze%20Building!5e0!3m2!1szh-TW!2shk!4v1731380888142!5m2!1szh-TW!2shk" width="420" height="95%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" 
+                height="100%" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="co-info" style="font-size: 16px;">
+      <i></i>Study Workshop
+      <i class="fa fa-location-arrow" style="margin-left: 20px; margin-right: 2px;"></i>8/F Prince Building 71 Hoi Yuen Road Kwun Tong Kowloon
+      <i class="fa fa-solid fa-phone" style="margin-left: 20px; margin-right: 2px;"></i>34567890      
+      <i class="fa fa-solid fa-envelope" style="margin-left: 20px; margin-right: 2px;"></i>info@studyworkshop.com
+    </div>
+  
+</div> 
+</section>
+
+
+<footer class="section footer">
+  <ul class="footer-links">
+    <li><a href="index.html" class="footer-link">Home</a></li>
+    <li><a href="about.html" class="footer-link">about</a></li>
+    <li><a href="courses.html" class="footer-link">courses</a></li>
+    <li><a href="photo_album.html" class="footer-link">photo</a></li>
+    <li><a href="contact_us.html" class="footer-link">contact us</a></li>
+  </ul>
+  <ul class="footer-icons">
+    <li><a href="http://www.instagram.com" class="footer-icon">
+      <i class="fa-brands fa-instagram"></i></a>
+    </li>
+    <li><a href="http://www.whatsapp.com" class="footer-icon">
+      <i class="fa-brands fa-whatsapp"></i></a>
+    </li>
+    <li><a href="https://mail.google.com/mail" class="footer-icon">
+      <i class="fa-solid fa-envelope"></i></a>
+    </li>
+  </ul>
+  <p class="copyright">
+    copyright@ copy; Study Workshop
+    <span id="date"></span> all right reserved
+  </p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

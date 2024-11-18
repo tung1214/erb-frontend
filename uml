@@ -1,0 +1,80 @@
+classDiagram
+    class ShoppingCart {
+        -List<Item> items
+        +addItem(Item item)
+        +removeItem(Item item)
+        +getTotalPrice() Float
+        +clear()
+    }
+    class Item {
+        -String id
+        -String name
+        -Float price
+        -Integer quantity
+        +calculatePrice() Float
+    }
+    class Product {
+        -String id
+        -String name
+        -Float price
+        +Product(String id, String name, Float price)
+    }
+    class User {
+        -String id
+        -String name
+        -String email
+        -ShoppingCart cart
+        +addProductToCart(Product product)
+        +removeProductFromCart(Product product)
+    }
+    class Order {
+        -User user
+        -ShoppingCart cart
+        -Date orderDate
+        -String status
+        +placeOrder()
+        +cancelOrder()
+    }
+    
+    ShoppingCart "1" -- "*" Item : contains
+    User "1" -- "1" ShoppingCart : has
+    User "1" -- "*" Product : orders
+    Order "1" -- "1" User : belongs to
+    Order "1" -- "1" ShoppingCart : contains
+
+
+
+    classDiagram
+class index {
+        Home
+About
+courses
+photo album
+ShoppingCart
+Login
+    }
+class InterestClass {
+        createProduct()
+        addToCart
+updateCartUI
+    }
+    class ShoppingCart {
+        -List<Item> items
+        +removeItem(Item item)
+        +getTotalPrice() Float
+        +clear()
+    }
+    class Item {
+        -String id
+        -String name
+        -Float price
+        -Integer quantity
+        +calculatePrice() Float
+    }
+
+
+
+
+    index -- InterestClass : inherits
+  InterestClass -- ShoppingCart : inherits
+    ShoppingCart "1" -- "*" Item : contains
